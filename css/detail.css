@@ -1,0 +1,200 @@
+/* semua */
+
+.main{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+}
+
+img{
+    border-radius: 10px;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 2px 2px 5px antiquewhite;
+}
+
+.ph-arrow-circle-left{
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    font-size: 30px;
+    background-color: gray
+}
+.ph-arrow-circle-left:hover{
+    background-color: aliceblue;
+}
+
+
+
+/* FILM DAN SERIES START */
+
+.castContainer{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content:center ;
+    overflow-y: hidden;
+}
+
+.castList{
+    width: 90%;
+    height: 330px;
+    /* background-color: aquamarine; */
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* overflow-y: hidden; */
+}
+
+.listItem{
+    width: 300px;
+    height: 260px;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 14px;
+    font-family: cursive;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black
+}
+
+.castImg{
+    width: 130px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p{
+    color: antiquewhite;
+    text-shadow: 2px 2px 2px black;
+    font-family: cursive;
+    margin: 5px;
+    font-size: 15px;
+}
+
+/* TRAILER */
+
+.trailer{
+    background-color: rgba(30, 29, 28, 0.5);
+    color: aliceblue;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.trailerContainer{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.iframe{
+    width: 80%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* SIMILIAR */
+
+.similarMoviesContainer {
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.moviePoster {
+    width: 170px;
+    height: 300px;
+    margin: 5px;
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    object-fit: cover; 
+}
+
+.moviePoster:hover{
+    filter: brightness(80%);
+}
+
+
+/* media */
+
+@media (max-width: 550px) {
+    .trailerContainer {
+        height: 300px;
+    }
+    .iframe {
+        width: 80%;
+        height: 200px;
+    }
+    figure{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 390px) {
+    figure {
+        display: flex;
+        flex-direction: column;
+    }
+    figcaption {
+        width: 300px;
+    }
+    img {
+        margin-top: 50px;
+        width: 230px;
+    }
+}
+
+/* FILM DAN SERIES END */
+
+
+
+
+/* ARTIS */
+
+.overview{
+    /* background-color: aliceblue; */
+    display: flex;
+}
+
+.knownFor{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 550px;
+    height: 300px;
+    padding: 0px;
+}
+
+.kfImg{
+    width: 130px;
+}
+
+.ket{
+    width: 150px;
+    font-size: 15px;
+    text-align: center;
+}
+

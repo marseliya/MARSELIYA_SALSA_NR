@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoviesTime</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../asset/favicon.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+
+    <!-- LOGIN -->
+
+    <div id="prompt" class="prompt">
+      <div class="content">
+        <h2>Welcome to MoviesTime!</h2>
+        <p>What can we call you?</p>
+        <input type="text" id="inputName" placeholder="Enter your name" />
+        <button id="submitName">Submit</button>
+      </div>
+    </div>
+
+    <!-- START HEADER  -->
+
+    <div class="header">
+
+      <!-- LOGO  -->
+      <img
+        class="logo"
+        src="https://see.fontimg.com/api/renderfont4/gxnGR/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bW92aWVzIHRpbWU/creamy-sugar.png"
+        alt=""
+      />
+        
+      <!-- NAVIGASI  -->
+
+      <nav id="nav">
+        <a title="Log out" onclick="list1()" id="logOut"  href="../html/indeks.html"><i class="ph ph-door-open"></i></a>
+        <a onclick="list()" id="popularMoviesBtn" href="../html/listM.html"
+          >MOVIES</a
+        >
+        <a onclick="listt()" id="topRatedSeriesBtn" href="../html/listM.html"
+          >SERIES</a
+        >
+        <a onclick="listtt()" id="popularActress" href="../html/listM.html"
+          >ACTRESS</a
+        >
+      </nav>
+
+      <!-- MENU  -->
+      <div id="menu" class="menu">
+        <i class="ph ph-list"></i>
+      </div>
+    </div>
+
+    <!-- END HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+      <div class="wlcm">
+        <h3 id="welcomeMessage"></h3>
+        <p>Find an interesting movies, series or your fav actress here!</p>
+        <form id="form-search">
+          <input
+            type="text"
+            id="keyword"
+            placeholder="Search for movies, series or a name"
+          />
+          <button type="submit" id="submit">Search</button>
+        </form>
+      </div>
+      <h4>Now Playing in Cinema</h4>
+      <div class="page"></div>
+      <div class="now"></div>
+      <div class="arrow">
+        <a class="ph ph-arrow-circle-left"></a>
+        <a class="ph ph-arrow-circle-right"></a>
+      </div>
+      <h5>Airing Today!</h5>
+      <div class="today"></div>
+      <h6>POPULAR MOVIES</h6>
+      <div class="popMovie"></div>
+      <h6 class="trailerr">Trailer</h6>
+      <div class="trailer"></div>
+    </div>
+    <!-- END MAIN -->
+
+    <!-- FOOTER -->
+    <div class="footer">  
+      <div class="inside">
+        <img
+          class="logo"
+          src="https://see.fontimg.com/api/renderfont4/gxnGR/eyJyIjoiZnMiLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/bW92aWVzIHRpbWU/creamy-sugar.png"
+          alt=""
+        />
+        <div class="foot">
+          <a target="_blank" title="lihat instagram kami" href="https://www.instagram.com/accounts/login/"
+            ><i class="ph ph-instagram-logo"></i
+          ></a>
+          <a target="_blank" title="bagikan ke facebook" href="Facebook: https://www.facebook.com/login/"
+            ><i class="ph ph-facebook-logo"></i
+          ></a>
+          <a target="_blank" title="lihat channel telegram kami" href="https://web.telegram.org/"
+            ><i class="ph ph-telegram-logo"></i
+          ></a>
+          <p>Copyright &copy; MarseliyaS</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
